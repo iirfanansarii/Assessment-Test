@@ -1,0 +1,177 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.add-container {
+    background-color: var(--header);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 70px;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--header);
+    font-size: 40px;
+    border-left: 5px solid var(--header);
+    margin-top: -45px;
+}
+
+.add-item {
+    width: 60%;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.addBox {
+    margin: 0 auto;
+    background-color: var(--CoolGray);
+    max-width: 100%;
+    min-width: 100%;
+    border-left: 5px solid var(--blue);
+    border-bottom: 1px dashed var(--blue);
+}
+
+.input-text {
+    background-color: #ccc;
+    height: 50px;
+    width: 98%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid var(--blue);
+    border: 0;
+    color: red;
+    border-bottom: 5px solid var(--blue);
+}
+
+#option {
+    height: 55px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid var(--blue);
+}
+
+.option-list {
+    padding: 10px;
+    color: var(--blue);
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+}
+
+.checkbox {
+    height: 55px;
+    width: 30px;
+}
+
+.input-text {
+    color: var(--blue);
+    font-size: 20px;
+    font-family: "Abril Fatface", cursive;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+#select {
+    background-color: #ccc;
+    height: 57px;
+    width: 99%;
+    margin-top: 5px;
+    margin-left: 0px;
+    color: var(--blue);
+    border-left: 5px solid var(--blue);
+    font-size: 17px;
+    font-family: "Abril Fatface", cursive;
+}
+
+.option {
+    background-color: #ccc;
+    height: 50px;
+    width: 99%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border: 1px solid var(--blue);
+    border: 0;
+    color: var(--blue);
+    border-left: 5px solid var(--blue);
+    font-size: 25px;
+    font-family: "Josefin Slab", serif;
+}
+
+ul {
+    font-size: 50px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.remove {
+    height: 52px;
+    width: 100px;
+    margin-top: 4px;
+    margin-left: 5px;
+    background-color: var(--blue);
+    color: white;
+    font-size: 20px;
+    font-family: "Abril Fatface", cursive;
+    outline-style: none;
+}
+
+.remove:hover {
+    background-color: var(--header);
+    color: var(--blue);
+    border: 2px dotted var(--blue);
+    text-decoration: underline;
+    outline-style: double;
+}
+
+.button {
+    height: 50px;
+    width: 99%;
+    color: white;
+    font-size: 100%;
+    background-color: var(--blue);
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: "Abril Fatface", cursive;
+    font-size: 20px;
+}
+
+.button:hover {
+    background-color: var(--header);
+    color: var(--blue);
+    border: 2px dotted var(--blue);
+    text-decoration: underline;
+    outline-style: double;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-left: -15px;
+}
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-start: 3;
+}

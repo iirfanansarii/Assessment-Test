@@ -1,0 +1,41 @@
+<div class="add-container">
+    <!-- ****************** -->
+
+    <div class="add-item">
+        <div class="header">
+            <h1>Assessment Creater</h1>
+        </div>
+        <br />
+        <form (ngSubmit)="onSubmit()">
+            <div class="addBox margin-top" *ngFor="let questionObj of questionArray; let i = index">
+                <!-- {{ obj.questionTitle }} -->
+                <input name="questionTitle{{ i }}" [(ngModel)]="questionObj.questionTitle" type="text" class="input-text" placeholder="Type Your Question Here.." />
+                <div class="option-list">
+                    <ul>
+                        <li *ngFor="let optionObj of questionObj.options; let j = index">
+                            <input type="checkbox" class="checkbox" name="answer1" />
+
+                            <input type="text" id="optionTitle{{ i }}{{ j }}" name="optionTitle{{ i }}{{ j }}" [(ngModel)]="optionObj.optionTitle" class="option" placeholder="option {{ j + 1 }}" />
+                            <button class="remove" (click)="removeOption(j)">Remove</button>
+                        </li>
+                    </ul>
+                    <div class="btn">
+                        <button class="button" (click)="addOption(questionObj)">
+              Add More Option
+            </button>
+
+                        <button class="button" (click)="removeQuestion(i)">
+              Remove Question
+            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="button" (click)="addQuestion()">
+          Add More Question
+        </button>
+                <button class="button" type="submit">Submit Question</button>
+            </div>
+        </form>
+    </div>
+</div>
